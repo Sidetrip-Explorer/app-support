@@ -3,7 +3,7 @@
 | 項目 | 値 |
 |---|---|
 | 版 | v2（2026-10-25） |
-| 対象 | Side-Trip-Explorer の全アプリ（Picdule、燃費記録 など）を、iOS（Mac）と Android（Windows）で開発する Claude Code |
+| 対象 | Sidetrip Explorer の全アプリ（Picdule、燃費記録 など）を、iOS（Mac）と Android（Windows）で開発する Claude Code |
 | 承認 | オーナー（2026-10-25） |
 | 変更の記録 | `_rules/CHANGES.md` |
 
@@ -17,8 +17,8 @@
 
 ## 2. 原本と公開先
 
-- 原本：GitHub の **Side-Trip-Explorer/app-support** リポジトリ（main ブランチ）
-- 公開先：https://side-trip-explorer.github.io/app-support/ （GitHub Pages、main の / を配信）
+- 原本：GitHub の **Sidetrip-Explorer/app-support** リポジトリ（main ブランチ）
+- 公開先：https://sidetrip-explorer.github.io/app-support/ （GitHub Pages、main の / を配信）
 - **各プロジェクトに控えを置かない。** 控えは必ず公開版とずれる。
 
 ## 3. 何を共通にし、何を個別にするか
@@ -42,7 +42,7 @@
 
 | パス | 公開 URL | 区分 |
 |---|---|---|
-| `index.html` | https://side-trip-explorer.github.io/app-support/ | 共通 |
+| `index.html` | https://sidetrip-explorer.github.io/app-support/ | 共通 |
 | `apps/<アプリ名>/index.html` | …/apps/<アプリ名>/ | 共通（OS を選ぶ案内） |
 | `apps/<アプリ名>/privacy/index.html` | …/apps/<アプリ名>/privacy/ | 共通（OS を選ぶ案内） |
 | `apps/<アプリ名>/<OS>/index.html` | …/apps/<アプリ名>/<OS>/ | 個別（サポートページ） |
@@ -95,17 +95,17 @@
    | Windows（Git Bash） | `$HOME/.cache/side-trip-explorer/app-support-<アプリ名>` |
    | Windows（PowerShell） | `$env:USERPROFILE\.cache\side-trip-explorer\app-support-<アプリ名>` |
 
-   無ければ `gh repo clone Side-Trip-Explorer/app-support <場所>`、あれば `git pull`。
+   無ければ `gh repo clone Sidetrip-Explorer/app-support <場所>`、あれば `git pull`。
    未プッシュのコミットや未コミットの変更が残っていたら、先にオーナーに知らせる。
 2. **このファイルと `_rules/CHANGES.md` を読む。** 前回から増えた行に、自分の OS で対応が要るものがあれば、
    オーナーに知らせてから作業する。
 3. **作業用コピーの設定を確かめる**（初回だけ）。
    ```
-   git config user.name Side-Trip-Explorer
+   git config user.name Sidetrip-Explorer
    git config user.email ikoma.datadrive@gmail.com
    git config core.autocrlf false
    ```
-   `gh auth status` で、Side-Trip-Explorer に書き込めるアカウントでログインしていることを確かめる。
+   `gh auth status` で、Sidetrip-Explorer に書き込めるアカウントでログインしていることを確かめる。
 4. **実態を確かめる**（5章のルール 5）。
 5. **書き換える。** 新しいページは `_template/` の雛形を写して作り、`{ }` の印をすべて埋める。
    変えたページの「最終更新日」を、日本時間の今日にする。
